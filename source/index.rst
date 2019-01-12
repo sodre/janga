@@ -1,8 +1,3 @@
-.. janga documentation master file, created by
-   sphinx-quickstart on Fri Jan 11 23:11:05 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to janga's documentation!
 =================================
 
@@ -10,6 +5,7 @@ Welcome to janga's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+This is my website.  I hope you like it. 
 
 
 Indices and tables
