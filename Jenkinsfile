@@ -19,5 +19,12 @@ pipeline {
                    """
             }
         }
+        stage('clean-up') {
+            steps {
+                sh """#!/bin/bash -il
+                   conda env remove --name janga-env
+                   """
+            }
+        }
     }
 }
