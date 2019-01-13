@@ -7,7 +7,6 @@ pipeline {
             steps {
                 sh """#!/bin/bash -il
                    conda env update -f environment.yml
-                   conda activate janga-env
                    """
             }
         }
