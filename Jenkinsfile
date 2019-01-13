@@ -1,5 +1,7 @@
 pipeline {
-    agent condaforge/linux-anvil-comp7
+    agent {
+        label 'condaforge/linux-anvil-comp7'
+    }
     stages {
         stage('create-env') {
             steps {
