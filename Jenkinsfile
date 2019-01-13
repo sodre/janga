@@ -19,6 +19,19 @@ pipeline {
                    """
             }
         }
+        stage('gh-pages') {
+            environment {
+                GH_TOKEN='${GH_TOKEN}'
+            }
+            steps {
+                sh """#!/bin/bash -il
+                   cd build/html/
+                   git add .
+                   git commit -m "Deployed from Jenkins"
+                   git push --force --quiet "https://${GH_TOKEN}@github.com/CurtLH/janga.git" master:gh-pages 
+                   """
+            }
+        }
         stage('clean-up') {
             steps {
                 sh """#!/bin/bash -il
