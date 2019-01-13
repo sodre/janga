@@ -29,7 +29,7 @@ pipeline {
 
                    git init
                    git config user.name "CurtLH"
-                   git config user.email "CurtLHampton@gmail.com
+                   git config user.email "CurtLHampton@gmail.com"
 
                    git add .
                    git commit -m "Deployed from Jenkins"
