@@ -7,13 +7,14 @@ pipeline {
             steps {
                 sh """#!/bin/bash -il
                    conda env update -f environment.yml
-                   conda activate janga-env 
+                   conda activate janga-env
                    """
             }
         }
         stage('build-docs') {
             steps {
                 sh """#!/bin/bash -il
+                   conda activate janga-env
                    make html
                    """
             }
